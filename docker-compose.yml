@@ -1,11 +1,12 @@
 version: "3.4"
 services:
   api:
-    image: ghcr.io/jimblizzarddemos/fabrikam-api:latest
+    image: ghcr.io/<yourgithubaccount>/fabrikam-api:latest
     ports:
       - "3001:3001"
+
   web:
-    image: ghcr.io/jimblizzarddemos/fabrikam-web:latest
+    image: ghcr.io/<yourgithubaccount>/fabrikam-web:latest
     depends_on:
         - api
     environment:
